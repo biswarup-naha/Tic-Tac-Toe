@@ -8,7 +8,7 @@
     <script src="./script.js"></script>
 </head>
 <body>
-    <div class="container">
+    <center class="container">
         <h1>::TIC TAC TOE GAME::</h1>
         <p id="ins"> 
             Game starts by just Tap on 
@@ -19,20 +19,24 @@
         <div class="box"> 
             <div class="row">
                 <input type="text" class="class" id="b1" onclick="func1(); func()" readonly>
-                <input type="text" class="class" id="b2" onclick="func2(); func()" readonly>
-                <input type="text" class="class" id="b3" onclick="func3(); func()" readonly>
+                <input type="text" class="class" id="b2" onclick="func2(); play()" readonly>
+                <input type="text" class="class" id="b3" onclick="func3(); play()" readonly>
             </div>
             <div class="row">
-                <input type="text" class="class" id="b4" onclick="func4(); func()" readonly>
-                <input type="text" class="class" id="b5" onclick="func5(); func()" readonly>
-                <input type="text" class="class" id="b6" onclick="func6(); func()" readonly>
+                <input type="text" class="class" id="b4" onclick="func4(); play()" readonly>
+                <input type="text" class="class" id="b5" onclick="func5(); play()" readonly>
+                <input type="text" class="class" id="b6" onclick="func6(); play()" readonly>
             </div>
             <div class="row">
-                <input type="text" class="class" id="b7" onclick="func7(); func()" readonly>
-                <input type="text" class="class" id="b8" onclick="func8(); func()" readonly>
-                <input type="text" class="class" id="b9" onclick="func9(); func()" readonly>
+                <input type="text" class="class" id="b7" onclick="func7(); play()" readonly>
+                <input type="text" class="class" id="b8" onclick="func8(); play()" readonly>
+                <input type="text" class="class" id="b9" onclick="func9(); play()" readonly>
+            </div>
+            <button id="reset" onclick="reset();">Reset game</button>
+            <div id="result">
+                
             </div>
         </div>
-    </div>
+    </center>
 </body>
 </html>
